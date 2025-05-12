@@ -9,7 +9,6 @@ header {
   align-items: center;
   justify-content: space-around;
   padding: 24px 48px;
-  background-color: #fff;
 }
 
 header h2 {
@@ -43,18 +42,26 @@ nav a {
   width: 350px;
   height: 350px;
   border-radius: 12px;
-  box-shadow: 10px 5px 5px gray;
+  box-shadow: 5px 1px 10px gray;
 }
 
 .ladoFoto {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.ladoFoto h1 {
+  font-size: 2rem;
+  font-weight: 500px;
+  font-family: "Playfair Display";
 }
 
 .logo {
   display: flex;
-  gap: 30px;
+  gap: 1rem;
 }
 
 .logo img {
