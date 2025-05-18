@@ -36,6 +36,17 @@ nav a {
   display: flex;
   justify-content: center;
   gap: 40px;
+  border-radius: 12px;
+  padding-left: 30rem;
+}
+
+.introcao h1::before {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -20px;
+  background: url("./assets/Rectangle.svg") no-repeat;
+  background-size: contain;
 }
 
 .foto img {
@@ -55,8 +66,20 @@ nav a {
 
 .ladoFoto h1 {
   font-size: 2rem;
-  font-weight: 500px;
+  font-weight: 500;
   font-family: "Playfair Display";
+  position: relative;
+}
+
+.ladoFoto h1::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -10px;
+  top: 0;
+  background: url("./assets/Rectangle.svg") no-repeat;
+  background-size: contain;
 }
 
 .logo {
@@ -67,4 +90,17 @@ nav a {
 .logo img {
   width: 30px;
   height: 30px;
+}
+
+.local {
+  width: 50rem;
+  height: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.local img {
+  width: 20px;
+  height: 20px;
 }
