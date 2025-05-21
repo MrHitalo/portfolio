@@ -104,3 +104,59 @@ nav a {
   width: 20px;
   height: 20px;
 }
+
+.formacao-bg {
+  background: url("assets/bg.svg") no-repeat center center;
+  background-size: cover;
+  transform: skewY(-8deg);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 4rem 0;
+  width: 100vw;
+  position: relative;
+}
+
+.formTitulo {
+  display: flex;
+  height: 25rem;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4rem;
+  padding-left: 1rem;
+  gap: 1rem;
+  width: 70%;
+  transform: skewY(8deg);
+  color: #fff;
+}
+
+.formTitulo h1 {
+  display: flex;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Playfair Display";
+  margin-bottom: 3rem;
+}
+.formTituloBacharel {
+  display: flex;
+  gap: 10px;
+}
+.formTituloBacharel img {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.formacao {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+}
+.cursando {
+  display: flex;
+  gap: 10px;
+  margin-left: 40px;
+}
