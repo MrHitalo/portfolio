@@ -113,6 +113,7 @@ nav a {
   margin-bottom: 4rem;
   padding: 4rem 0;
   width: 100vw;
+  height: 20rem;
   position: relative;
 }
 
@@ -125,7 +126,7 @@ nav a {
   padding-top: 4rem;
   padding-left: 1rem;
   gap: 1rem;
-  width: 70%;
+  width: 60%;
   transform: skewY(8deg);
   color: #fff;
 }
@@ -159,4 +160,13 @@ nav a {
   display: flex;
   gap: 10px;
   margin-left: 40px;
+}
+.experiencia {
+  background-color: tomato;
+  margin-top: 15rem;
+}
+.experiencia h1 {
+  display: flex;
+  background-color: slategrey;
+  justify-content: flex-end;
 }
