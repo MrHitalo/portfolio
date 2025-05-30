@@ -4,6 +4,10 @@
   list-style-type: none;
   text-decoration: none;
 }
+body {
+  background: #f5f5f5;
+  color: #222;
+}
 header {
   display: flex;
   align-items: center;
@@ -161,12 +165,75 @@ nav a {
   gap: 10px;
   margin-left: 40px;
 }
-.experiencia {
-  background-color: tomato;
-  margin-top: 15rem;
-}
 .experiencia h1 {
   display: flex;
-  background-color: slategrey;
   justify-content: flex-end;
+  margin-right: 20rem;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Playfair Display";
+  margin-bottom: 3rem;
+  color: #174e5e;
+}
+.experiencia {
+  display: flex;
+  flex-direction: column;
+  height: 50rem;
+}
+.card {
+  background-color: #222;
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(23, 78, 94, 0.15);
+  padding: 2rem 2rem 1.5rem 2rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card h2 {
+  margin-bottom: 5px;
+}
+
+.expTech ul {
+  margin-left: 1rem;
+}
+.expTech li {
+  list-style: disc;
+  letter-spacing: 0.5px;
+}
+.cardTitulo h2,
+.expTech h2,
+.funcao h2 {
+  color: #4dd0e1;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+#carrossel-card {
+  transition: all 0.3s;
+}
+
+.botoes-carrossel {
+  display: flex;
+  justify-content: space-around;
+}
+
+.carrossel-experiencias button {
+  background: #174e5e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: background 0.2s;
+  display: flex;
+}
+.carrossel-experiencias button:hover {
+  background: #ffb300;
+  color: #222;
 }
