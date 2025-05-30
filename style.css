@@ -192,6 +192,7 @@ nav a {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  min-height: 340px;
 }
 .card h2 {
   margin-bottom: 5px;
@@ -205,8 +206,6 @@ nav a {
   letter-spacing: 0.5px;
 }
 .cardTitulo h2,
-.expTech h2,
-.formacao-bg,
 .funcao h2 {
   color: #4dd0e1;
   margin-bottom: 0.5rem;
