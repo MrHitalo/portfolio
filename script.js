@@ -18,9 +18,18 @@ const experiencias = [
 ];
 
 let current = 0;
-function renderCard(index) {
+let isSliding = false;
+
+function renderCard(index, direction = "right") {
+  if (isSliding) return;
+  isSliding = true;
+
   const card = document.getElementById("carrossel-card");
-  card.style.opacity = 0; // inicia o fade-out
+  // Sai para a esquerda ou direita
+  card.classList.remove("slide-in", "slide-in-right", "slide-out-left");
+  card.classList.add(
+    direction === "right" ? "slide-out-left" : "slide-in-right"
+  );
 
   setTimeout(() => {
     const exp = experiencias[index];
@@ -43,17 +52,22 @@ function renderCard(index) {
         </div>
       </div>
     `;
-    card.style.opacity = 1; // faz o fade-in
-  }, 300); // tempo igual ao transition
+    // Entra do lado oposto
+    card.classList.remove("slide-out-left", "slide-in-right");
+    card.classList.add("slide-in");
+    setTimeout(() => {
+      isSliding = false;
+    }, 400);
+  }, 400);
 }
 
 document.getElementById("prevBtn").onclick = function () {
   current = (current - 1 + experiencias.length) % experiencias.length;
-  renderCard(current);
+  renderCard(current, "left");
 };
 document.getElementById("nextBtn").onclick = function () {
   current = (current + 1) % experiencias.length;
-  renderCard(current);
+  renderCard(current, "right");
 };
 
-renderCard(current); // Mostra o primeiro card ao carregar
+renderCard(current);
