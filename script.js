@@ -5,7 +5,8 @@ const experiencias = [
     periodo: "09/2024 - 02/2025",
     local: "Rua Serjipe - 1024 - Belo Horizonte",
     tecnologias: ["JavaScript", "TypeScript", "PHP", "SQL"],
-    funcao: "Atuei como FullStack",
+    funcao:
+      "Atuei como Full Stack desenvolvendo soluções frontend em TS/JS para responsividade, design e manipulação de dados, enquanto no backend otimizei performance através de refinamento de queries com PHP, garantindo operações ágeis em bancos de dados.",
   },
   {
     empresa: "WBM Technology",
@@ -13,7 +14,8 @@ const experiencias = [
     periodo: "03/2025 - Atualmente",
     local: "Rua Olinto Magalhães - 194B - Belo Horizonte ",
     tecnologias: ["TypeScript", "JavaScript", "NodeJS", "React"],
-    funcao: "Atuo como FullStack ",
+    funcao:
+      "Como Desenvolvedor Full Stack na WBM, atuo no desenvolvimento de soluções completas utilizando React com TypeScript e Tailwind CSS para interfaces responsivas no frontend, integrando APIs RESTful e WebSocket para comunicação em tempo real, além de utilizar Postman para testes e simulação de dados. No backend, implemento sistemas em JavaScript com foco em comunicação IoT via protocolo Modbus, criação de APIs eficientes e otimização de operações através de queries de alto desempenho para garantir sincronia entre dispositivos e aplicações.",
   },
 ];
 
@@ -25,7 +27,6 @@ function renderCard(index, direction = "right") {
   isSliding = true;
 
   const card = document.getElementById("carrossel-card");
-  // Sai para a esquerda ou direita
   card.classList.remove("slide-in", "slide-in-right", "slide-out-left");
   card.classList.add(
     direction === "right" ? "slide-out-left" : "slide-in-right"

@@ -206,10 +206,17 @@ nav a {
   letter-spacing: 0.5px;
 }
 .cardTitulo h2,
+.expTech h2,
 .funcao h2 {
   color: #4dd0e1;
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
+}
+.cardTitulo p,
+.expTech p,
+li,
+.funcao p {
+  font-weight: bold;
 }
 
 #carrossel-card {
