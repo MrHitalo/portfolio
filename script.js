@@ -5,7 +5,7 @@ const experiencias = [
     periodo: "09/2024 - 02/2025",
     local: "Rua Serjipe - 1024 - Belo Horizonte",
     tecnologias: ["JavaScript", "TypeScript", "PHP", "SQL"],
-    funcao: "Atuei como FullStack",
+    funcao: "Como Fullstack atuei no Front-end utilizando o Zeedhi como Framework para estilização e responsividade, o Typescript para lógicas. No Back-end utilizei PHP para otimização de query",
   },
   {
     empresa: "WBM Technology",
