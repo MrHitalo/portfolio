@@ -7,6 +7,9 @@ const experiencias = [
     tecnologias: ["JavaScript", "TypeScript", "PHP", "SQL"],
     funcao:
       "Atuação fullstack: no front-end, Zeedhi para layout responsivo e TypeScript para lógicas; no back-end, PHP e SQL para otimização de queries e endpoints.",
+
+    funcao: "Como Fullstack atuei no Front-end utilizando o Zeedhi como Framework para estilização e responsividade, o Typescript para lógicas. No Back-end utilizei PHP para otimização de query",
+
   },
   {
     empresa: "WBM Technology",
