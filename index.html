@@ -1,36 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio | Hitalo Faria Almeida</title>
+    <meta
+      name="description"
+      content="Portfólio de Hitalo Faria Almeida — Desenvolvedor FullStack em Belo Horizonte. HTML, CSS, JavaScript, React e Node.js."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://mrhitalo.github.io/Projeto/" />
+    <link rel="icon" href="assets/lua.png" />
+    <meta name="theme-color" content="#174e5e" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Portfólio | Hitalo Faria Almeida" />
+    <meta
+      property="og:description"
+      content="Desenvolvedor FullStack — projetos, experiência e contato."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-image.png" />
+    <meta property="og:url" content="https://mrhitalo.github.io/Projeto/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Playfair Display"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
     <header>
       <h2>Hitalo Faria Almeida</h2>
 
-      <nav>
+      <nav aria-label="Principal">
         <a href="#formacao">Formação</a>
         <a href="#experiencia">Experiências</a>
+        <a href="#habilidades">Habilidades</a>
         <a href="#contato">Contato</a>
       </nav>
 
-      <img src="assets/lua.png" alt="Lua" />
+      <img src="assets/lua.png" alt="Ícone" />
     </header>
 
-    <main>
-      <div class="introducao">
+    <main id="conteudo">
+      <div class="introducao container">
         <div class="foto">
-          <img src="assets/FotoPerfil.jpg" alt="Foto de Perfil" />
+          <img src="assets/FotoPerfil.jpg" alt="Foto de Perfil de Hitalo" />
         </div>
 
         <div class="ladoFoto">
-          <div class="logo">
+          <div class="logo" aria-label="Stacks">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
               alt="HTML"
@@ -55,10 +82,16 @@
 
           <h1>Desenvolvedor FullStack</h1>
 
+          <p class="resumo">
+            Estudante de Ciência da Computação, desenvolvendo interfaces e
+            serviços web com foco em qualidade, acessibilidade e performance.
+          </p>
+
           <div class="local">
             <img
               src="assets/location_on_FILL0_wght400_GRAD0_opsz48 1.png"
-              alt="Localidade onde Reside"
+              alt=""
+              aria-hidden="true"
             />
             <p>Belo Horizonte - MG</p>
           </div>
@@ -70,42 +103,97 @@
           <h1>Formação</h1>
           <div class="formacao">
             <div class="formTituloBacharel">
-              <img src="assets/Vector.svg" alt="capelo" />
+              <img src="assets/Vector.svg" alt="" aria-hidden="true" />
               <h2>Bacharel</h2>
             </div>
 
             <div class="cursando">
-              <p>Ciência da Computação(Cursando)</p>
+              <p>Ciência da Computação (Cursando)</p>
               <p style="color: darkgray">· Universidade Fumec</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="carrossel-experiencias">
+      <section class="carrossel-experiencias container" id="experiencia">
         <h1>Experiência</h1>
-        <div id="carrossel-card"></div>
+        <div
+          id="carrossel-card"
+          role="region"
+          aria-live="polite"
+          aria-label="Carrossel de experiências profissionais"
+        ></div>
         <div class="botoes-carrossel">
-          <button id="prevBtn">Anterior</button>
-          <button id="nextBtn">Próximo</button>
+          <button id="prevBtn" type="button" aria-label="Anterior">
+            Anterior
+          </button>
+          <button id="nextBtn" type="button" aria-label="Próximo">
+            Próximo
+          </button>
         </div>
       </section>
 
-      <section class="projetoTitulo">
+      <section class="projetoTitulo container" id="habilidades">
         <div>
           <h1>Habilidades</h1>
-          <!--Card de Habilidades-->
+          <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>PHP</li>
+            <li>SQL</li>
+            <li>Git & GitHub</li>
+          </ul>
         </div>
       </section>
     </main>
 
     <footer id="contato">
       <h2>Contato</h2>
-      <p>email</p>
-      <p>telefone</p>
-      <p>Linkedin</p>
+      <p>
+        <a href="mailto:hitalofariaalmeida1602@gmail.com"
+          >hitalofariaalmeida1602@mail.com</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://www.linkedin.com/in/hitalofariaalmeida/
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+      </p>
+      <p>
+        <a href="https://github.com/MrHitalo" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+      </p>
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Schema.org: Person (SEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Hitalo Faria Almeida",
+        "jobTitle": "Desenvolvedor FullStack",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Belo Horizonte",
+          "addressRegion": "MG",
+          "addressCountry": "BR"
+        },
+        "url": "https://mrhitalo.github.io/Projeto/",
+        "sameAs": [
+          "https://github.com/MrHitalo",
+          "https://www.linkedin.com/in/SEU-LINK"
+        ]
+      }
+    </script>
   </body>
 </html>
