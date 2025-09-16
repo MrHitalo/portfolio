@@ -6,10 +6,7 @@ const experiencias = [
     local: "Rua Serjipe - 1024 - Belo Horizonte",
     tecnologias: ["JavaScript", "TypeScript", "PHP", "SQL"],
     funcao:
-      "Atuação fullstack: no front-end, Zeedhi para layout responsivo e TypeScript para lógicas; no back-end, PHP e SQL para otimização de queries e endpoints.",
-
-    funcao: "Como Fullstack atuei no Front-end utilizando o Zeedhi como Framework para estilização e responsividade, o Typescript para lógicas. No Back-end utilizei PHP para otimização de query",
-
+      "Como Fullstack atuei no Front-end utilizando o Zeedhi como Framework para estilização e responsividade, o Typescript para lógicas. No Back-end utilizei PHP para otimização de queries e endpoints.",
   },
   {
     empresa: "WBM Technology",
@@ -35,7 +32,7 @@ function renderCard(index, direction = "right") {
   // Sai para a esquerda ou direita
   card.classList.remove("slide-in", "slide-in-right", "slide-out-left");
   card.classList.add(
-    direction === "right" ? "slide-out-left" : "slide-in-right"
+    direction === "right" ? "slide-out-left" : "slide-in-right",
   );
 
   setTimeout(() => {

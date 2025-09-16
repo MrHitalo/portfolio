@@ -25,7 +25,13 @@ html {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial,
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
     sans-serif;
   line-height: 1.55;
 }
@@ -235,7 +241,9 @@ nav a:focus-visible {
 #carrossel-card {
   position: relative;
   min-height: 200px;
-  transition: transform 0.4s, opacity 0.4s;
+  transition:
+    transform 0.4s,
+    opacity 0.4s;
   will-change: transform, opacity;
 }
 

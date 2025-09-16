@@ -4,11 +4,11 @@
   "description": "Portfólio estático (HTML/CSS/JS) de Hitalo Faria Almeida",
   "private": true,
   "scripts": {
-    "lint": "eslint . --ext .js",
+    "lint": "eslint . --ext .js --no-eslintrc --config .eslintrc.json",
     "format": "prettier --write \"**/*.{js,css,html,md,yml,yaml,json}\""
   },
   "devDependencies": {
-    "eslint": "^9.10.0",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "prettier": "^3.3.3"
